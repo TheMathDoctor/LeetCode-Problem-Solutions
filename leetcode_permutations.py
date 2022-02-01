@@ -30,6 +30,8 @@ def permutations(A):
     def permutations_ii(A):
         #same algorithm as before except we keep track of the elements
         #that have been the 0-th elements
+        #entries are no longer unique, but we want to return all permutations
+        #without returning duplicates. 
         n = len(A)
 
         if n == 1:
