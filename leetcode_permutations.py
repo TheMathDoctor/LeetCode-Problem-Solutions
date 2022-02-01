@@ -48,6 +48,7 @@ def permutations(A):
             temp = A[i]
             A[i] = A[0]
             A[0] = temp
+            seen.append(temp)
 
             sub_perms = permutations_ii(A)
             for s in sub_perms:
